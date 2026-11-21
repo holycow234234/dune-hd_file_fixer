@@ -22,19 +22,15 @@ void setup(){
 }
 
 void loop(){
-    //buttonState = digitalRead(buttonPin);
-
     if(run){
       keyPressNWait(KEY_MENU); //popup
       
-      keyPressNWait(KEY_RETURN,5000); //enter code 353 (KEY_SELECT)
+      keyPressNWait(KEY_RETURN,5000);
 
-      keyPressNWait(KEY_DOWN_ARROW); //code 108 (KEY_DOWN)
+      keyPressNWait(KEY_DOWN_ARROW); 
       keyPressNWait(KEY_DOWN_ARROW);
       keyPressNWait(KEY_DOWN_ARROW);
       keyPressNWait(KEY_F10,9000); //B
-      
-      /*popup enter wait 3s down x3 B/f10 wait 7s */
     }
   }
 void keyPressNWait(uint8_t k){
